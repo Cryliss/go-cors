@@ -20,18 +20,20 @@ To add additional configuration to a request, there are two options.
 Either add any of the following command line flags to your input, or update the provided `conf.json` to reflect your desired configuration.   
 
 ### CLI flags
--url        The URL to scan for CORS misconfiguration
--headers    Include headers
--method     Include another method other than `GET`
--input      A text file with a list of domains to scan for CORS misconfiguration
--threads    Number of threads to use for the scan
--output     Save the results to a JSON file
--timeout    Set requests timeout (default 10s)
--proxy      Use a proxy (HTTP)
--help       Show the help information & exit
--verbose    Enables the UI to display realtime results
+| Flag | Description | Default |
+| :--: | :---------- | :-----: |
+| -url     | The URL to scan for CORS misconfiguration | "" |
+| -headers | Include headers | "" |
+| -method  |  Include another method other than `GET` | "GET" |
+| -input   |  A text file with a list of domains to scan for CORS misconfiguration or a json file will full configuration details | "" |
+| -threads |  Number of threads to use for the scan | 10 |
+| -output  |  Save the results to a JSON file | true |
+| -timeout |  Set requests timeout | "10s" |
+| -proxy   |  Use a proxy (HTTP) | "" |
+| -h       |  Show the help information & exit | N/A |
+| -verbose |  Enables the UI to display realtime results | false |
 
-`./go-cors -u https://example.com -d "User-Agent: GoogleBot\nCookie: SESSION=Hacked"`
+`./go-cors -url https://example.com -headers "User-Agent: GoogleBot\nCookie: SESSION=Hacked"`
 
 ## Misconfigurations Tested
 `go-cors` tests the follow CORS misconfigurations:  
