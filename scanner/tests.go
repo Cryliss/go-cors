@@ -291,7 +291,7 @@ func (s *Scanner) specialCharactersBypass(c *http.Client, r *Request, tests []*t
 	if err != nil {
 		return err
 	}
-	specialChars := []string{"_", "-", `"`, "{", "}", "+", "^", "%60", "!", "~", ";", "|", "&", "'", "(", ")", "*", ",", "$", "=", "+", "%0b"}
+	specialChars := []string{"-", `"`, "{", "}", "+", "^", "%60", "!", "~", ";", "|", "&", "'", "(", ")", "*", ",", "$", "=", "+", "%0b"}
 	for _, char := range specialChars {
 		origin := "https://" + url.Subdomain + "." + url.Domain + "." + url.TLD + char + ".crylis.io"
 		acao, acac, err := s.sendRequest(c, r.URL, origin, r.Method, r.Headers)
