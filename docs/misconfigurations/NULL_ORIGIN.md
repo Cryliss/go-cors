@@ -1,4 +1,4 @@
-# Null origin
+# Null Origin
 
 ## Description 
 Host allows requests from `null` origins.
@@ -43,6 +43,5 @@ If the data URI scheme is used, the browser will use the `null` origin in the re
    };
 </script>"></iframe> 
 ```
-
 
 [code source](https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/CORS%20Misconfiguration#vulnerable-example-null-origin)
