@@ -57,5 +57,10 @@ func main() {
 	}
 
 	// We got valid flags / configuration files, let's start the scanning process
-	a.Scan.Start(a)
+	a.Scan.Start()
+
+	results := a.Scan.Results
+	for key, r := range results {
+		a.Scan.CreateOutputFile(key, r)
+	}
 }
