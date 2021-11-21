@@ -62,29 +62,12 @@ To add additional configuration to a request, there are two options.
 | -verbose |  Enables the UI to display realtime results | false |
 
 ## Example Usage of the CLI flags  
-### URL
-`./go-cors -url https://example.com`
-
-### Headers
-`./go-cors -url https://example.com -headers "User-Agent: GoogleBot\nCookie: SESSION=Hacked"`
-
-### Method
-`./go-cors -url https://example.com -method POST`
-
-### Input
-`./go-cors -input global_top_100_domains.txt` 
-
-### Threads
-`./go-cors -url https://example.com -threads 20`
-
-### Output
-`./go-cors -url https://example.com -output true`
-
-### Timeout 
-`./go-cors -url https://example.com -timeout 20s`
-
-### Proxy
-`./go-cors -url https://example.com -proxy http://127.0.0.1:4545`
-
-### Verbose 
-`./go-cors -url https://example.com -verbose true`
+- **URL**:     `./go-cors -url https://example.com`
+- **Headers**: `./go-cors -url https://example.com -headers "User-Agent: GoogleBot\nCookie: SESSION=Hacked"`
+- **Method**:  `./go-cors -url https://example.com -method POST`
+- **Input**:   `./go-cors -input global_top_100_domains.txt` 
+- **Threads**: `./go-cors -url https://example.com -threads 20`
+- **Output**:  `./go-cors -url https://example.com -output true`
+- **Timeout**: `./go-cors -url https://example.com -timeout 20s`
+- **Proxy**:   `./go-cors -url https://example.com -proxy http://127.0.0.1:4545`
+- **Verbose**: `./go-cors -url https://example.com -verbose true`
