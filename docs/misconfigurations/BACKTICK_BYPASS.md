@@ -1,7 +1,7 @@
 # Backtick Bypass
 
 ## Description
-The origin verification is flawed and can be bypassed using a backtick ("`").
+The origin verification is flawed and can be bypassed using a backtick (`).
 
 **Severity**: High
 
