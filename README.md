@@ -20,16 +20,16 @@ To add additional configuration to a request, there are two options.
 Either add any of the following command line flags to your input, or update the provided `conf.json` to reflect your desired configuration.   
 
 ### CLI flags
--u --url        The URL to scan for CORS misconfiguration
--d --headers    Include headers
--m --method     Include another method other than `GET`
--i --input      A text file with a list of domains to scan for CORS misconfiguration
--t --threads    Number of threads to use for the scan
--o --output     Save the results to a JSON file
--T --timeout    Set requests timeout (default 10s)
--p --proxy      Use a proxy (HTTP)
--h --help       Show the help information & exit
--v --verbose    Enables the UI to display realtime results
+-url        The URL to scan for CORS misconfiguration
+-headers    Include headers
+-method     Include another method other than `GET`
+-input      A text file with a list of domains to scan for CORS misconfiguration
+-threads    Number of threads to use for the scan
+-output     Save the results to a JSON file
+-timeout    Set requests timeout (default 10s)
+-proxy      Use a proxy (HTTP)
+-help       Show the help information & exit
+-verbose    Enables the UI to display realtime results
 
 `./go-cors -u https://example.com -d "User-Agent: GoogleBot\nCookie: SESSION=Hacked"`
 

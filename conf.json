@@ -1,6 +1,6 @@
 {
     "output": true,
-    "verbose": false,
+    "verbose": true,
     "timeout": "10s",
     "threads": 10,
     "tests": [{

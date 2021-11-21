@@ -6,6 +6,7 @@ import (
 	"errors"
 	"fmt"
 	"go-cors/scanner"
+	"go-cors/types"
 	"io/ioutil"
 	"os"
 	"strings"
@@ -13,9 +14,9 @@ import (
 )
 
 // CreateOutputFile creates a new file and writes the test results to it
-func (a *Application) CreateOutputFile(domain string) error {
+func (a *Application) CreateOutputFile(domain string, results []*types.Test) error {
 	newFile := a.newFileName(domain)
-	f, err := json.MarshalIndent(a.Scan.Results, "", " ")
+	f, err := json.MarshalIndent(results, "", " ")
 	if err != nil {
 		e := fmt.Sprintf("CreateOutputFile(%s): Error writing file (%s): %s\n", domain, newFile, err)
 		return errors.New(e)
@@ -31,7 +32,7 @@ func (a *Application) newFileName(domain string) string {
 	cDate := cTimeArr[0]
 	cTime := cTimeArr[1]
 	cTime = strings.Replace(cTime, ":", "-", 2)
-	newFile := "/results/" + domain + "_" + cDate + "-" + cTime + ".json"
+	newFile := "/Users/sabra/go/src/go-cors/results/" + domain + "_" + cDate + "-" + cTime + ".json"
 	return newFile
 }
 

@@ -57,5 +57,5 @@ func main() {
 	}
 
 	// We got valid flags / configuration files, let's start the scanning process
-	a.Scan.Start()
+	a.Scan.Start(a)
 }

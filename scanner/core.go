@@ -2,6 +2,7 @@ package scanner
 
 import (
 	"go-cors/log"
+	"go-cors/types"
 	"net/http"
 	"sync"
 )
@@ -15,7 +16,7 @@ import (
 type Scanner struct {
 	conf    *Conf
 	l       *log.Logger
-	Results interface{}
+	Results []*types.Test
 }
 
 // Conf structure to hold configuration settings for the scna
@@ -63,12 +64,9 @@ func (s *Scanner) CreateTests(domains []string, headers Headers, method, proxy s
 }
 
 // Start begins the scanning procedure
-func (s *Scanner) Start() {
+func (s *Scanner) Start(a types.Application) {
 	// Log the current scanner configuration, now that it's been setup
 	s.l.Log.Debug().Interface("conf", s.conf).Send()
-
-	// Create the HTTP client to make requests with
-	s.createClient()
 
 	processGroup := new(sync.WaitGroup)
 	processGroup.Add(s.conf.Threads)
@@ -78,45 +76,48 @@ func (s *Scanner) Start() {
 		go func() {
 			defer processGroup.Done()
 			for _, t := range s.conf.Tests {
-				s.runTests(c, t)
+				s.runTests(a, c, t)
 			}
 		}()
 	}
 	processGroup.Wait()
 }
 
-func (s *Scanner) runTests(c *http.Client, r *Request) {
-	if err := s.reflectOrigin(c, r); err != nil {
+func (s *Scanner) runTests(a types.Application, c *http.Client, r *Request) {
+	var t []*types.Test
+	if err := s.reflectOrigin(c, r, t); err != nil {
 		s.l.OutErr("s.runTests: reflect origins test failed - %s", err.Error())
 	}
-	if err := s.httpOrigin(c, r); err != nil {
+	if err := s.httpOrigin(c, r, t); err != nil {
 		s.l.OutErr("s.runTests: http origins test failed - %s", err.Error())
 	}
-	if err := s.nullOrigin(c, r); err != nil {
+	if err := s.nullOrigin(c, r, t); err != nil {
 		s.l.OutErr("s.runTests: null origins test failed - %s", err.Error())
 	}
-	if err := s.wildcardOrigin(c, r); err != nil {
+	if err := s.wildcardOrigin(c, r, t); err != nil {
 		s.l.OutErr("s.runTests: wildcard origins test failed - %s", err.Error())
 	}
-	if err := s.thirdPartyOrigin(c, r); err != nil {
+	if err := s.thirdPartyOrigin(c, r, t); err != nil {
 		s.l.OutErr("s.runTests: third party origins test failed - %s", err.Error())
 	}
-	if err := s.backtickBypass(c, r); err != nil {
+	if err := s.backtickBypass(c, r, t); err != nil {
 		s.l.OutErr("s.runTests: backtick bypass test failed - %s", err.Error())
 	}
-	if err := s.preDomainBypass(c, r); err != nil {
+	if err := s.preDomainBypass(c, r, t); err != nil {
 		s.l.OutErr("s.runTests: prefix domain bypass test failed - %s", err.Error())
 	}
-	if err := s.postDomainBypass(c, r); err != nil {
+	if err := s.postDomainBypass(c, r, t); err != nil {
 		s.l.OutErr("s.runTests: suffix domain bypass test failed - %s", err.Error())
 	}
-	if err := s.underscoreBypass(c, r); err != nil {
+	if err := s.underscoreBypass(c, r, t); err != nil {
 		s.l.OutErr("s.runTests: underscore bypass test failed - %s", err.Error())
 	}
-	if err := s.unescapedDotBypass(c, r); err != nil {
+	if err := s.unescapedDotBypass(c, r, t); err != nil {
 		s.l.OutErr("s.runTests: unescaped dot bypass test failed - %s", err.Error())
 	}
-	if err := s.specialCharactersBypass(c, r); err != nil {
+	if err := s.specialCharactersBypass(c, r, t); err != nil {
 		s.l.OutErr("s.runTests: special characters bypass test failed - %s", err.Error())
 	}
+	// Saving to output does not work yet :(
+	//a.CreateOutputFile(r.URL, t)
 }
