@@ -1,4 +1,4 @@
-# Pre-domain bypass
+# Pre Domain Bypass
 
 ## Description 
 Host allows requests from hostnames that has this host as a prefix. 
