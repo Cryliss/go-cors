@@ -1,7 +1,8 @@
 # Special Character Bypass
 
 ## Description
-The origin verification is flawed and can be bypassed using a special character, that is not an underscore or back tick, such as: `- " { } + ^ %60 ! ~ ; | & ' ( ) * , $ = + %0b`.
+The origin verification is flawed and can be bypassed using a special character, that is not an underscore or back tick, such as:  
+`- " { } + ^ %60 ! ~ ; | & ' ( ) * , $ = + %0b`.
 
 **Severity**: High
 
