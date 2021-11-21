@@ -1,0 +1,122 @@
+package scanner
+
+import (
+	"go-cors/log"
+	"net/http"
+	"sync"
+)
+
+// Make a new request (uses a client, method, url, origins and header )
+// URL parser
+// Function to create an array of origins
+
+// Scanner structure to hold the client connection we'll be making requests
+// from as well as the scanner configuration and results from the scan
+type Scanner struct {
+	conf    *Conf
+	l       *log.Logger
+	Results interface{}
+}
+
+// Conf structure to hold configuration settings for the scna
+type Conf struct {
+	Output  bool       `json:"output"`
+	Tests   []*Request `json:"tests"`
+	Threads int        `json:"threads"`
+	Timeout string     `json:"timeout"`
+	Verbose bool       `json:"verbose"`
+}
+
+// Request structure to hold configuration settings for each request
+type Request struct {
+	URL     string  `json:"url"`
+	Headers Headers `json:"headers"`
+	Method  string  `json:"method"`
+	Proxy   string  `json:"proxy"`
+}
+
+// Headers is a map of our header key,value pairs
+type Headers map[string]string
+
+// New creates and returns a new scanner
+func New(conf *Conf, log *log.Logger) *Scanner {
+	s := Scanner{
+		conf: conf,
+		l:    log,
+	}
+	return &s
+}
+
+// CreateTests initializes our array of tests
+func (s *Scanner) CreateTests(domains []string, headers Headers, method, proxy string) {
+	var tests []*Request
+	for _, domain := range domains {
+		r := Request{
+			URL:     domain,
+			Headers: headers,
+			Method:  method,
+			Proxy:   proxy,
+		}
+		tests = append(tests, &r)
+	}
+	s.conf.Tests = tests
+}
+
+// Start begins the scanning procedure
+func (s *Scanner) Start() {
+	// Log the current scanner configuration, now that it's been setup
+	s.l.Log.Debug().Interface("conf", s.conf).Send()
+
+	// Create the HTTP client to make requests with
+	s.createClient()
+
+	processGroup := new(sync.WaitGroup)
+	processGroup.Add(s.conf.Threads)
+
+	for i := 0; i < s.conf.Threads; i++ {
+		c := s.createClient()
+		go func() {
+			defer processGroup.Done()
+			for _, t := range s.conf.Tests {
+				s.runTests(c, t)
+			}
+		}()
+	}
+	processGroup.Wait()
+}
+
+func (s *Scanner) runTests(c *http.Client, r *Request) {
+	if err := s.reflectOrigin(c, r); err != nil {
+		s.l.OutErr("s.runTests: reflect origins test failed - %s", err.Error())
+	}
+	if err := s.httpOrigin(c, r); err != nil {
+		s.l.OutErr("s.runTests: http origins test failed - %s", err.Error())
+	}
+	if err := s.nullOrigin(c, r); err != nil {
+		s.l.OutErr("s.runTests: null origins test failed - %s", err.Error())
+	}
+	if err := s.wildcardOrigin(c, r); err != nil {
+		s.l.OutErr("s.runTests: wildcard origins test failed - %s", err.Error())
+	}
+	if err := s.thirdPartyOrigin(c, r); err != nil {
+		s.l.OutErr("s.runTests: third party origins test failed - %s", err.Error())
+	}
+	if err := s.backtickBypass(c, r); err != nil {
+		s.l.OutErr("s.runTests: backtick bypass test failed - %s", err.Error())
+	}
+	if err := s.preDomainBypass(c, r); err != nil {
+		s.l.OutErr("s.runTests: prefix domain bypass test failed - %s", err.Error())
+	}
+	if err := s.postDomainBypass(c, r); err != nil {
+		s.l.OutErr("s.runTests: suffix domain bypass test failed - %s", err.Error())
+	}
+	if err := s.underscoreBypass(c, r); err != nil {
+		s.l.OutErr("s.runTests: underscore bypass test failed - %s", err.Error())
+	}
+	if err := s.unescapedDotBypass(c, r); err != nil {
+		s.l.OutErr("s.runTests: unescaped dot bypass test failed - %s", err.Error())
+	}
+	if err := s.specialCharactersBypass(c, r); err != nil {
+		s.l.OutErr("s.runTests: special characters bypass test failed - %s", err.Error())
+	}
+}

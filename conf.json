@@ -1,0 +1,24 @@
+{
+    "output": true,
+    "verbose": false,
+    "timeout": "10s",
+    "threads": 10,
+    "tests": [{
+        "url": "https://www.instagram.com",
+        "headers": {
+            "user-agent": "GoogleBot",
+            "cookie": "SESSION=Hacked"
+        },
+        "proxy": "http://127.0.0.1:4545",
+        "method": ""
+    },
+    {
+        "url": "https://www.google.com",
+        "headers": {
+            "user-agent": "GoogleBot",
+            "cookie": "SESSION=Hacked"
+        },
+        "proxy": "",
+        "method": ""
+    }]
+}
