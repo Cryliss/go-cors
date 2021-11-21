@@ -25,7 +25,7 @@ Either add any of the following command line flags to your input, or update the 
 | -url     | The URL to scan for CORS misconfiguration | "" |
 | -headers | Include headers | "" |
 | -method  |  Include another method other than `GET` | "GET" |
-| -input   |  A text file with a list of domains to scan for CORS misconfiguration or a json file will full configuration details | "" |
+| -input   |  A text file with a list of domains or a json configuration file | "" |
 | -threads |  Number of threads to use for the scan | 10 |
 | -output  |  Save the results to a JSON file | true |
 | -timeout |  Set requests timeout | "10s" |
