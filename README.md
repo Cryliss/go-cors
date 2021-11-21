@@ -38,15 +38,15 @@ Either add any of the following command line flags to your input, or update the 
 ## Misconfigurations Tested
 `go-cors` tests the follow CORS misconfigurations:  
 
-- [Origin Reflection]()
-- [HTTP Origin]()
-- [Null Origin]()
-- [Wildcard Origin]()
-- [Third Party Origin]()
-- [Backtick Bypass]()
-- [Pre-Domain Bypass]()
-- [Post-Domain Bypass]()
-- [Underscore Bypass]()
-- [Unescaped Dot Bypass]()
+- [Origin Reflection](https://github.com/Cryliss/go-cors/blob/main/docs/misconfigurations/ORIGIN_REFLECTION.md)
+- [HTTP Origin](https://github.com/Cryliss/go-cors/blob/main/docs/misconfigurations/HTTP_ORIGIN.md)
+- [Null Origin](https://github.com/Cryliss/go-cors/blob/main/docs/misconfigurations/NULL_ORIGIN.md)
+- [Wildcard Origin](https://github.com/Cryliss/go-cors/blob/main/docs/misconfigurations/WILDCARD_ORIGIN.md)
+- [Third Party Origin](https://github.com/Cryliss/go-cors/blob/main/docs/misconfigurations/THIRD_PARTY_ORIGINS.md)
+- [Backtick Bypass](https://github.com/Cryliss/go-cors/blob/main/docs/misconfigurations/BACKTICK_BYPASS.md)
+- [Pre-Domain Bypass](https://github.com/Cryliss/go-cors/blob/main/docs/misconfigurations/PREDOMAIN_BYPASS.md)
+- [Post-Domain Bypass](https://github.com/Cryliss/go-cors/blob/main/docs/misconfigurations/POSTDOMAIN_BYPASS.md)
+- [Underscore Bypass](https://github.com/Cryliss/go-cors/blob/main/docs/misconfigurations/UNDERSCORE_BYPASS.md)
+- [Unescaped Dot Bypass](https://github.com/Cryliss/go-cors/blob/main/docs/misconfigurations/UNESCAPED_DOT_BYPASS.md)
 
 For more information on each, including sample exploits and possible fixes for the vulnerabilities, please click the link provided.
