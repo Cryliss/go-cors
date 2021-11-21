@@ -1,4 +1,4 @@
-# Backtick bypass
+# Backtick Bypass
 
 ## Description
 The origin verification is flawed and can be bypassed using a backtick (`).
