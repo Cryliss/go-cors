@@ -1,4 +1,4 @@
-# Wildcard origin
+# Wildcard Origin
 
 ## Description 
 Host allows requests to be made from any origin. 
