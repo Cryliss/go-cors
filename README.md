@@ -71,3 +71,54 @@ To add additional configuration to a request, there are two options.
 - **Timeout**: `./go-cors -url https://example.com -timeout 20s`
 - **Proxy**:   `./go-cors -url https://example.com -proxy http://127.0.0.1:4545`
 - **Verbose**: `./go-cors -url https://example.com -verbose true`
+
+
+# Using `go-cors` in your own application
+
+```go
+package main
+
+import (
+    "fmt"
+    "github.com/Cryliss/go-cors/scanner"
+    "github.com/Cryliss/go-cors/log"
+)
+
+// initGoCors initializes a new go-cors scanner
+func initGoCors() *scanner.Scanner {    
+    log := log.New()
+    log.Verbose = false
+
+    conf := scanner.Conf{
+        Output: true,
+        Threads: 10,
+        Timeout: "10s",
+        Verbose: false,
+    }
+    scan := scanner.New(&conf, log)
+    return scan
+}
+
+func main() {
+    corsScanner := initGoCors()
+
+    /*
+    In order to start running tests with go-cors, we need to create them first.
+
+    Creating tests requires an array of domain names, a scanner.Headers variable which is a map[string]string of header name-value pairs, a request method and a proxy URL.
+
+    After creating our headers variable and domain names, then we can call the create tests function, which will set scanner.Conf.Tests value at the end.
+    */
+    var headers scanner.Headers
+    domains := []string{"https://www.instagram.com/"}
+    corsScanner.CreateTests(domains, headers, "GET", "")
+
+    // Now that we have our tests set, we can go ahead and start the scanner.
+    corsScanner.Start()
+
+    // After running the scan, you can save your results to a specific file directory like so:
+    if err := corsScanner.SaveResults("/your/directories/filepath/"); err != nil {
+        fmt.Printf("Error saving reults: %s\n", err.Error())
+    }
+}
+```
