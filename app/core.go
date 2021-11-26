@@ -30,8 +30,10 @@ func (a *Application) CheckFlags(flags *Flags) error {
 		return nil
 	}
 
+	// Set the logs verbose value
 	a.log.Verbose = flags.Verbose
 
+	// Define the scanner configuration based on the given flags & create a new scanner
 	conf := scanner.Conf{
 		Output:  flags.Output,
 		Threads: flags.Threads,
@@ -46,12 +48,17 @@ func (a *Application) CheckFlags(flags *Flags) error {
 		flags.checkURL(a)
 	}
 
-	method := "GET"
+	// Get the header flags
 	headers := flags.checkHeader(a)
+
+	// The default method for each request is 'GET'
+	method := "GET"
 	if flags.validateMethod(a) {
+		// If we were given a valid request method in our flags, let's override the default
 		method = flags.Method
 	}
 
+	// Create the test structs for scanner to use during testing
 	a.Scan.CreateTests(a.domains, headers, method, flags.Proxy)
 	return nil
 }

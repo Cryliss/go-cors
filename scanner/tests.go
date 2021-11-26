@@ -6,7 +6,7 @@ import (
 	tld "github.com/jpillora/go-tld"
 )
 
-// Test structure holds all our data related to the test
+// Test struct holds all our data related to the test
 type Test struct {
 	Acao    string            `json:"access-control-allow-origins"`
 	Acac    string            `json:"access-control-allow-credentials"`
@@ -19,6 +19,7 @@ type Test struct {
 
 func (s *Scanner) reflectOrigin(c *http.Client, r *Request, tests []*Test) ([]*Test, error) {
 	s.l.Out("Starting reflect origins test")
+
 	origin := "https://crylis.io/"
 	acao, acac, err := s.sendRequest(c, r.URL, origin, r.Method, r.Headers)
 	if err != nil {
@@ -43,6 +44,7 @@ func (s *Scanner) reflectOrigin(c *http.Client, r *Request, tests []*Test) ([]*T
 
 func (s *Scanner) httpOrigin(c *http.Client, r *Request, tests []*Test) ([]*Test, error) {
 	s.l.Out("Starting http origins test")
+
 	origin := "http://crylis.io/"
 	acao, acac, err := s.sendRequest(c, r.URL, origin, r.Method, r.Headers)
 	if err != nil {
@@ -67,6 +69,7 @@ func (s *Scanner) httpOrigin(c *http.Client, r *Request, tests []*Test) ([]*Test
 
 func (s *Scanner) nullOrigin(c *http.Client, r *Request, tests []*Test) ([]*Test, error) {
 	s.l.Out("Starting null origins test")
+
 	origin := "null"
 	acao, acac, err := s.sendRequest(c, r.URL, origin, r.Method, r.Headers)
 	if err != nil {
@@ -91,6 +94,7 @@ func (s *Scanner) nullOrigin(c *http.Client, r *Request, tests []*Test) ([]*Test
 
 func (s *Scanner) wildcardOrigin(c *http.Client, r *Request, tests []*Test) ([]*Test, error) {
 	s.l.Out("Starting wilcard origin test")
+
 	origin := "*"
 	acao, acac, err := s.sendRequest(c, r.URL, origin, r.Method, r.Headers)
 	if err != nil {
@@ -115,6 +119,7 @@ func (s *Scanner) wildcardOrigin(c *http.Client, r *Request, tests []*Test) ([]*
 
 func (s *Scanner) thirdPartyOrigin(c *http.Client, r *Request, tests []*Test) ([]*Test, error) {
 	s.l.Out("Starting third party test")
+
 	origins := []string{
 		"http://jsbin.com",
 		"https://codepen.io",
@@ -147,6 +152,7 @@ func (s *Scanner) thirdPartyOrigin(c *http.Client, r *Request, tests []*Test) ([
 
 func (s *Scanner) backtickBypass(c *http.Client, r *Request, tests []*Test) ([]*Test, error) {
 	s.l.Out("Starting backtick bypass test")
+
 	url, err := tld.Parse(r.URL)
 	origin := "https://" + url.Subdomain + "." + url.Domain + "." + url.TLD + "`.cryls.io"
 	acao, acac, err := s.sendRequest(c, r.URL, origin, r.Method, r.Headers)
@@ -172,6 +178,7 @@ func (s *Scanner) backtickBypass(c *http.Client, r *Request, tests []*Test) ([]*
 
 func (s *Scanner) preDomainBypass(c *http.Client, r *Request, tests []*Test) ([]*Test, error) {
 	s.l.Out("Starting predomain bypass test")
+
 	url, err := tld.Parse(r.URL)
 	if err != nil {
 		return tests, err
@@ -200,6 +207,7 @@ func (s *Scanner) preDomainBypass(c *http.Client, r *Request, tests []*Test) ([]
 
 func (s *Scanner) postDomainBypass(c *http.Client, r *Request, tests []*Test) ([]*Test, error) {
 	s.l.Out("Starting postdomain bypass test")
+
 	url, err := tld.Parse(r.URL)
 	if err != nil {
 		return tests, err
@@ -241,6 +249,7 @@ func (s *Scanner) postDomainBypass(c *http.Client, r *Request, tests []*Test) ([
 
 func (s *Scanner) underscoreBypass(c *http.Client, r *Request, tests []*Test) ([]*Test, error) {
 	s.l.Out("Starting underscore bypass test")
+
 	url, err := tld.Parse(r.URL)
 	if err != nil {
 		return tests, err
@@ -269,6 +278,7 @@ func (s *Scanner) underscoreBypass(c *http.Client, r *Request, tests []*Test) ([
 
 func (s *Scanner) unescapedDotBypass(c *http.Client, r *Request, tests []*Test) ([]*Test, error) {
 	s.l.Out("Starting unescaped dot bypass test")
+
 	url, err := tld.Parse(r.URL)
 	if err != nil {
 		return tests, err
@@ -297,6 +307,7 @@ func (s *Scanner) unescapedDotBypass(c *http.Client, r *Request, tests []*Test) 
 
 func (s *Scanner) specialCharactersBypass(c *http.Client, r *Request, tests []*Test) ([]*Test, error) {
 	s.l.Out("Starting special characters bypass test")
+
 	url, err := tld.Parse(r.URL)
 	if err != nil {
 		return tests, err

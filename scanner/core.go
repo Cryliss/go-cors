@@ -14,10 +14,6 @@ import (
 	"github.com/jpillora/go-tld"
 )
 
-// Make a new request (uses a client, method, url, origins and header )
-// URL parser
-// Function to create an array of origins
-
 // Scanner structure to hold the client connection we'll be making requests
 // from as well as the scanner configuration and results from the scan
 type Scanner struct {
@@ -79,9 +75,11 @@ func (s *Scanner) Start() {
 	// Log the current scanner configuration, now that it's been setup
 	s.l.Log.Debug().Interface("conf", s.conf).Send()
 
+	// Create a new sync.WaitGroup and the # of threads we need to it
 	processGroup := new(sync.WaitGroup)
 	processGroup.Add(s.conf.Threads)
 
+	// For each thread, create a new client and begin performing the tests.
 	for i := 0; i < s.conf.Threads; i++ {
 		c := s.createClient()
 		go func() {
@@ -94,6 +92,7 @@ func (s *Scanner) Start() {
 	processGroup.Wait()
 }
 
+// runTests runs all the tests and saves their results in array.
 func (s *Scanner) runTests(c *http.Client, r *Request) {
 	var t []*Test
 	var err error
@@ -153,25 +152,32 @@ func (s *Scanner) runTests(c *http.Client, r *Request) {
 		s.l.OutErr("s.runTests: special characters bypass test failed - %s", err.Error())
 	}
 
+	// Now that we've fnished running all the tests, let's all the results to our
+	// Scanner's main results variable. First, let's parse the reqests URL
 	url, _ := tld.Parse(r.URL)
 
+	// Now, use the domain to index into our scanner Results map
 	tests, ok := s.Results[url.Domain]
 	if !ok {
+		// If we were unable to retrieve anything from the map, then the entry doesn't
+		// exist and we need to add it.
 		var urlTests [][]*Test
 		urlTests = append(urlTests, t)
 		s.Results[url.Domain] = urlTests
-	} else {
-		tests = append(tests, t)
-		s.Results[url.Domain] = tests
+		return
 	}
+
+	// Add this round of test results to the tests array, and update our map
+	tests = append(tests, t)
+	s.Results[url.Domain] = tests
 }
 
 // CreateOutputFile creates a new file and writes the test results to it
-func (s *Scanner) CreateOutputFile(domain string, results [][]*Test) error {
-	newFile := s.newFileName(domain)
+func (s *Scanner) CreateOutputFile(directory, domain string, results [][]*Test) error {
+	newFile := s.newFileName(directory, domain)
 	f, err := json.MarshalIndent(results, "", " ")
 	if err != nil {
-		e := fmt.Sprintf("CreateOutputFile(%s): Error writing file (%s): %s\n", domain, newFile, err)
+		e := fmt.Sprintf("CreateOutputFile(%s): Error writing file (%s): %s\n", domain, newFile, err.Error())
 		return errors.New(e)
 	}
 	err = ioutil.WriteFile(newFile, f, 0644)
@@ -182,12 +188,20 @@ func (s *Scanner) CreateOutputFile(domain string, results [][]*Test) error {
 }
 
 // newFileName creates the name for the output file in the format of domain_TIMESTAMP.json
-func (s *Scanner) newFileName(domain string) string {
+func (s *Scanner) newFileName(directory, domain string) string {
+	// Get the current time and parse it into a date and time string
 	currTime := time.Now()
 	cTimeArr := strings.Split(currTime.String(), " ")
 	cDate := cTimeArr[0]
 	cTime := cTimeArr[1]
 	cTime = strings.Replace(cTime, ":", "-", 2)
-	newFile := "/Users/sabra/go/src/go-cors/results/" + domain + "_" + cDate + "-" + cTime + ".json"
+
+	// Let's check the directory that we were given and ensure it has a "/" at the end
+	if directory[len(directory)-1] != '/' {
+		directory = directory + "/"
+	}
+
+	// Create the new file name and return it.
+	newFile := directory + domain + "_" + cDate + "-" + cTime + ".json"
 	return newFile
 }

@@ -40,6 +40,8 @@ func usage() {
 	os.Exit(-1)
 }
 
+// checkInputFile checks the given input file, determines if it's a .json or .txt file
+// and passes it off the proper parsing function.
 func (flags *Flags) checkInputFile(a *Application) (bool, error) {
 	isConfig := false
 
@@ -76,6 +78,7 @@ func (flags *Flags) checkInputFile(a *Application) (bool, error) {
 	return isConfig, nil
 }
 
+// checkURL checks the URL flag
 func (flags *Flags) checkURL(a *Application) {
 	// We only get here if we didn't have any type of input file, so we must get a URL flag
 	// so if we don't, we'll display the usage and exit
@@ -85,6 +88,7 @@ func (flags *Flags) checkURL(a *Application) {
 	a.domains = append(a.domains, flags.URL)
 }
 
+// checkHeader checks the header flag
 func (flags *Flags) checkHeader(a *Application) scanner.Headers {
 	h := make(scanner.Headers)
 
@@ -118,14 +122,21 @@ func (flags *Flags) checkHeader(a *Application) scanner.Headers {
 	return h
 }
 
+// validateMethod ensure we were given a valid request method from the flags
 func (flags *Flags) validateMethod(a *Application) bool {
 	switch flags.Method {
+	case "DELETE":
+		fallthrough
+	case "GET":
+		fallthrough
+	case "PUT":
+		fallthrough
 	case "POST":
 		fallthrough
 	case "HEAD":
 		return true
 	default:
-		a.log.OutErr("a.flags.validateMethod: ignoring given method %s, only HEAD and POST methods are allowed", flags.Method)
+		a.log.OutErr("a.flags.validateMethod: ignoring given method %s, only DELETE, GET, PUT, POST, and HEAD methods are allowed", flags.Method)
 		return false
 	}
 }
