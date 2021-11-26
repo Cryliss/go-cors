@@ -81,10 +81,10 @@ func (s *Scanner) Start() {
 
 	// For each thread, create a new client and begin performing the tests.
 	for i := 0; i < s.conf.Threads; i++ {
-		c := s.createClient()
 		go func() {
 			defer processGroup.Done()
 			for _, t := range s.conf.Tests {
+				c := s.createClient(t.Proxy)
 				s.runTests(c, t)
 			}
 		}()
@@ -170,6 +170,16 @@ func (s *Scanner) runTests(c *http.Client, r *Request) {
 	// Add this round of test results to the tests array, and update our map
 	tests = append(tests, t)
 	s.Results[url.Domain] = tests
+}
+
+// SaveResults saves the scan results to the provided directory file.
+func (s *Scanner) SaveResults(directory string) error {
+	for key, results := range s.Results {
+		if err := s.CreateOutputFile(directory, key, results); err != nil {
+			return err
+		}
+	}
+	return nil
 }
 
 // CreateOutputFile creates a new file and writes the test results to it

@@ -9,11 +9,11 @@
             "user-agent": "GoogleBot",
             "cookie": "SESSION=Hacked"
         },
-        "proxy": "http://127.0.0.1:4545",
+        "proxy": "",
         "method": ""
     },
     {
-        "url": "https://tumblr.com",
+        "url": "https://www.csun.edu/",
         "headers": {
             "user-agent": "GoogleBot",
             "cookie": "SESSION=Hacked"

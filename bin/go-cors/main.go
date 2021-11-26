@@ -22,13 +22,13 @@ var (
 func args() {
 	flag.StringVar(&url, "url", "", "The URL to scan for CORS misconfiguration")
 	flag.StringVar(&header, "headers", "", "The headers to include in the request ")
-	flag.StringVar(&method, "method", "GET", "Include another method other than `GET`")
+	flag.StringVar(&method, "method", "GET", "Include another method other than GET")
 	flag.StringVar(&file, "input", "", "A text file with a list of domains to scan for CORS misconfiguration")
-	flag.IntVar(&threads, "threads", 10, "Number of threads to use for the scan. Default: 40")
-	flag.BoolVar(&output, "output", true, "Save the results to a JSON file. Always saves as go-cors/results/domain_TIMESTAMP.json. Default: true")
-	flag.StringVar(&timeout, "Timeout", "10s", "Set the request timeout. Default: 10s")
+	flag.IntVar(&threads, "threads", 10, "Number of threads to use for the scan.")
+	flag.BoolVar(&output, "output", true, "Save the results to a JSON file. Always saves as go-cors/results/domain_TIMESTAMP.json")
+	flag.StringVar(&timeout, "timeout", "10s", "Set the request timeout")
 	flag.StringVar(&proxy, "proxy", "", "Use a HTTP address as a proxy")
-	flag.BoolVar(&verbose, "verbose", false, "Enable the UI for realtime results and requests. Defualt: false")
+	flag.BoolVar(&verbose, "verbose", false, "Enable the UI for realtime results and requests")
 	flag.Parse()
 }
 
@@ -60,8 +60,5 @@ func main() {
 	a.Scan.Start()
 
 	dir := "/Users/sabra/go/src/go-cors/results/"
-	results := a.Scan.Results
-	for key, r := range results {
-		a.Scan.CreateOutputFile(dir, key, r)
-	}
+	a.Scan.SaveResults(dir)
 }

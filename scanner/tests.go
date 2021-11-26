@@ -330,7 +330,7 @@ func (s *Scanner) specialCharactersBypass(c *http.Client, r *Request, tests []*T
 			Method:  r.Method,
 			Origin:  origin,
 			URL:     r.URL,
-			Test:    "special character " + char + " bypass",
+			Test:    "special character '" + char + "' bypass",
 		}
 		tests = append(tests, &t)
 	}

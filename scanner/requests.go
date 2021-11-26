@@ -4,6 +4,7 @@ import (
 	"crypto/tls"
 	"net"
 	"net/http"
+	"net/url"
 	"time"
 )
 
@@ -17,13 +18,21 @@ func (s *Scanner) newRequest(method, url string) *http.Request {
 }
 
 // createClient creates a new HTTP client
-func (s *Scanner) createClient() *http.Client {
+func (s *Scanner) createClient(proxy string) *http.Client {
 	// Set the request timeout
 	timeout, err := time.ParseDuration(s.conf.Timeout)
 	if err != nil {
 		// If we weren't able to parse the configuration's timeout value, let's
 		// make it equal to our default value of 10 seconds.
 		timeout, _ = time.ParseDuration("10s")
+	}
+
+	var proxyURL *url.URL
+	if proxy != "" {
+		proxyURL, err = url.Parse(proxy)
+		if err != nil {
+			s.l.OutErr("s.createClient: failed to parse proxy URL - %s", err.Error())
+		}
 	}
 
 	transport := &http.Transport{
@@ -34,6 +43,7 @@ func (s *Scanner) createClient() *http.Client {
 			Timeout:   timeout,
 			KeepAlive: time.Second,
 		}).DialContext,
+		Proxy: http.ProxyURL(proxyURL),
 	}
 
 	redirect := func(req *http.Request, via []*http.Request) error {
@@ -73,7 +83,7 @@ func (s *Scanner) sendRequest(c *http.Client, url, origin, method string, header
 		return "", "", err
 	}
 
-	// Get the response headers and return them 
+	// Get the response headers and return them
 	acao := resp.Header.Get("Access-Control-Allow-Origin")
 	acac := resp.Header.Get("Access-Control-Allow-Credentials")
 

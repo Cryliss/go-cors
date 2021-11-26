@@ -35,7 +35,7 @@ type Flags struct {
 
 // usage prints out how to use the program
 func usage() {
-	fmt.Printf("usage: %s\n", os.Args[0])
+	fmt.Printf("Usage of %s:\n", os.Args[0])
 	flag.PrintDefaults()
 	os.Exit(-1)
 }
