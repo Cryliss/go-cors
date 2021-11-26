@@ -26,7 +26,7 @@ For more information on each, including sample exploits and possible fixes for t
 
 ## Installation
 Clone the repository:  
-```git clone https://github.com/Cryliss/go-cors.git```  
+`git clone https://github.com/Cryliss/go-cors.git`  
 
 Change directories to the repository's directory:  
 `cd go-cors`  
@@ -44,7 +44,7 @@ To run scans on multiple URLs, save the URLs to a `.txt` file and run the progra
 
 ### Configurable Scans
 To add additional configuration to a request, there are two options.  
-1. Add any of the following command line flags to your input 
+1. Add any of the following command line flags to your input  
 2. Update the provided `conf.json` to reflect your desired configuration.   
 
 ### CLI flags
@@ -65,7 +65,7 @@ To add additional configuration to a request, there are two options.
 - **URL**:     `./go-cors -url https://example.com`
 - **Headers**: `./go-cors -url https://example.com -headers "User-Agent: GoogleBot\nCookie: SESSION=Hacked"`
 - **Method**:  `./go-cors -url https://example.com -method POST`
-- **Input**:   `./go-cors -input global_top_100_domains.txt` 
+- **Input**:   `./go-cors -input global_top_100_domains.txt`
 - **Threads**: `./go-cors -url https://example.com -threads 20`
 - **Output**:  `./go-cors -url https://example.com -output true`
 - **Timeout**: `./go-cors -url https://example.com -timeout 20s`
