@@ -105,9 +105,12 @@ func main() {
     /*
     In order to start running tests with go-cors, we need to create them first.
 
-    Creating tests requires an array of domain names, a scanner.Headers variable which is a map[string]string of header name-value pairs, a request method and a proxy URL.
+    Creating tests requires an array of domain names, a scanner.Headers variable 
+    which is a map[string]string of header name-value pairs, a request method and 
+    a proxy URL.
 
-    After creating our headers variable and domain names, then we can call the create tests function, which will set scanner.Conf.Tests value at the end.
+    After creating our headers variable and domain names, then we can call the create 
+    tests function, which will set scanner.Conf.Tests value at the end.
     */
     var headers scanner.Headers
     domains := []string{"https://www.instagram.com/"}
