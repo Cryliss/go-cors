@@ -2,7 +2,7 @@
 
 ## Description
 
-Host allows any origin to make requests to it by blindly reflect the Origin header value in `Access-Control-Allow-Origin headers` in responses, which means any website can read its secrets by sending cross-orign requests.
+Host allows any origin to make requests to it by blindly reflecting the Origin header value in `Access-Control-Allow-Origin headers` in responses, which means any website can read its secrets by sending cross-orign requests.
 
 **Severity**: High
 
