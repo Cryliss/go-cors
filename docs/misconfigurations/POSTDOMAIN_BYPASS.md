@@ -1,7 +1,7 @@
 # Post Domain Bypass
 
 ## Description 
-Host allows requests from hostnames that has this host as a suffix.  
+Host allows requests from hostnames that has the host as a suffix.  
 
 **Severity**: High
 
