@@ -1,7 +1,7 @@
 # Pre Domain Bypass
 
 ## Description 
-Host allows requests from hostnames that has this host as a prefix. 
+Host allows requests from hostnames that has the host as a prefix. 
 
 **Severity**: High
 
