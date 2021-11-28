@@ -90,7 +90,7 @@ func initGoCors() *scanner.Scanner {
     log.Verbose = false
 
     conf := scanner.Conf{
-        Output: true,
+        Output: "/path/to/your/save/directory/",
         Threads: 10,
         Timeout: "10s",
         Verbose: false,
