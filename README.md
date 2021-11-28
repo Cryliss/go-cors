@@ -84,32 +84,17 @@ import (
     "github.com/Cryliss/go-cors/log"
 )
 
-// initGoCors initializes a new go-cors scanner
-func initGoCors() *scanner.Scanner {    
-    log := log.New()
-    log.Verbose = false
-
-    conf := scanner.Conf{
-        Output: "/path/to/the/directory/to/save/",
-        Threads: 10,
-        Timeout: "10s",
-        Verbose: false,
-    }
-    scan := scanner.New(&conf, log)
-    return scan
-}
-
 func main() {
-    corsScanner := initGoCors()
+    corsScanner := InitGoCors()
 
     /*
     In order to start running tests with go-cors, we need to create them first.
 
-    Creating tests requires an array of domain names, a scanner.Headers variable 
-    which is a map[string]string of header name-value pairs, a request method and 
+    Creating tests requires an array of domain names, a scanner.Headers variable
+    which is a map[string]string of header name-value pairs, a request method and
     a proxy URL.
 
-    After creating our headers variable and domain names, then we can call the create 
+    After creating our headers variable and domain names, then we can call the create
     tests function, which will set scanner.Conf.Tests value at the end.
     */
     var headers scanner.Headers
