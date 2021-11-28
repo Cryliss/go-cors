@@ -1,5 +1,5 @@
 # gocors
-[![Go Reference](https://pkg.go.dev/badge/github.com/Cryliss/gocors.svg)](https://pkg.go.dev/github.com/Cryliss/gocors)  [![GoReportCard example](https://goreportcard.com/badge/github.com/Cryliss/gocors)](https://goreportcard.com/report/github.com/Cryliss/gocors)
+[![Go Reference](https://pkg.go.dev/badge/github.com/Cryliss/gocors.svg)](https://pkg.go.dev/github.com/Cryliss/gocors)  [![Go Report Card](https://goreportcard.com/badge/github.com/Cryliss/gocors)](https://goreportcard.com/report/github.com/Cryliss/gocors)
 
 
 A tool for scanning domains for CORS misconfigurations written in Go.  
