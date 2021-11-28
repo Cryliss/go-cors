@@ -12,7 +12,8 @@ import (
 func (s *Scanner) newRequest(method, url string) *http.Request {
 	req, err := http.NewRequest(method, url, nil)
 	if err != nil {
-		s.l.Log.Err(err).Msg("s.addRequestMethod")
+		s.l.Log.Err(err).Msg("s.newRequest")
+		s.l.OutErr("s.newRequest: failed to create a new request - %s", err.Error())
 	}
 	return req
 }
@@ -27,6 +28,7 @@ func (s *Scanner) createClient(proxy string) *http.Client {
 		timeout, _ = time.ParseDuration("10s")
 	}
 
+	// Create a new proxy URL
 	var proxyURL *url.URL
 	if proxy != "" {
 		proxyURL, err = url.Parse(proxy)
@@ -35,6 +37,7 @@ func (s *Scanner) createClient(proxy string) *http.Client {
 		}
 	}
 
+	// Create a new HTTP transport for the cient
 	transport := &http.Transport{
 		MaxIdleConns:    30,
 		IdleConnTimeout: time.Second,
@@ -46,10 +49,12 @@ func (s *Scanner) createClient(proxy string) *http.Client {
 		Proxy: http.ProxyURL(proxyURL),
 	}
 
+	// Create a redirect function for the client
 	redirect := func(req *http.Request, via []*http.Request) error {
 		return http.ErrUseLastResponse
 	}
 
+	// Create and return a new HTTP client 
 	c := http.Client{
 		Transport:     transport,
 		CheckRedirect: redirect,
