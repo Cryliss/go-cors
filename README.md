@@ -78,18 +78,21 @@ To add additional configuration to a request, there are two options.
 
 # Using `gocors` in your own application
 
+Run `go get github.com/Cryliss/gocors` in your terminal.
+
 ```go
 package main
 
-import (
-    "fmt"
-    "github.com/Cryliss/gocors
-    "github.com/Cryliss/gocors/scanner"
-    "github.com/Cryliss/gocors/log"
-)
+import "github.com/Cryliss/gocors"
 
 func main() {
-    corsScanner := gocors.InitGoCors()
+    // Set our scanner configuration variables
+    output := "/path/to/your/output/directory"
+    timeout := "10s"
+    threads := 10
+    
+    // Create a new scanner.
+    corsScanner := gocors.InitGoCors(output, timeout, threads)
 
     /*
     In order to start running tests with gocors, we need to create them first.
@@ -106,11 +109,8 @@ func main() {
     corsScanner.CreateTests(domains, headers, "GET", "")
 
     // Now that we have our tests set, we can go ahead and start the scanner.
+    // Once the scan finishes, it will automatically save your results to the output 
+    // directory, if one is provided.
     corsScanner.Start()
-
-    // After running the scan, you can save your results to a specific file directory like so:
-    if err := corsScanner.SaveResults(); err != nil {
-        fmt.Printf("Error saving reults: %s\n", err.Error())
-    }
 }
 ```
