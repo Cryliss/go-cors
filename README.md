@@ -55,7 +55,7 @@ To add additional configuration to a request, there are two options.
 | -method  |  Include another method other than `GET` | "GET" |
 | -input   |  A text file with a list of domains or a json configuration file | "" |
 | -threads |  Number of threads to use for the scan | 10 |
-| -output  |  Save the results to a JSON file | true |
+| -output  |  Directory to save the results to a JSON file. | "" |
 | -timeout |  Set requests timeout | "10s" |
 | -proxy   |  Use a proxy (HTTP) | "" |
 | -h       |  Show the help information & exit | N/A |
@@ -90,7 +90,7 @@ func initGoCors() *scanner.Scanner {
     log.Verbose = false
 
     conf := scanner.Conf{
-        Output: true,
+        Output: "/path/to/the/directory/to/save/",
         Threads: 10,
         Timeout: "10s",
         Verbose: false,
@@ -120,7 +120,7 @@ func main() {
     corsScanner.Start()
 
     // After running the scan, you can save your results to a specific file directory like so:
-    if err := corsScanner.SaveResults("/your/directories/filepath/"); err != nil {
+    if err := corsScanner.SaveResults(); err != nil {
         fmt.Printf("Error saving reults: %s\n", err.Error())
     }
 }
