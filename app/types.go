@@ -1,8 +1,8 @@
 package app
 
 import (
-	"github.com/Cryliss/go-cors/log"
-	"github.com/Cryliss/go-cors/scanner"
+	"github.com/Cryliss/gocors/log"
+	"github.com/Cryliss/gocors/scanner"
 )
 
 // Application is our structure to hold data related to the program and its configuration.

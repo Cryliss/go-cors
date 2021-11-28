@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"errors"
 	"fmt"
-	"github.com/Cryliss/go-cors/log"
+	"github.com/Cryliss/gocors/log"
 	"io/ioutil"
 	"net/http"
 	"strings"

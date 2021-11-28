@@ -3,7 +3,7 @@ package app
 import (
 	"bufio"
 	"encoding/json"
-	"github.com/Cryliss/go-cors/scanner"
+	"github.com/Cryliss/gocors/scanner"
 	"io/ioutil"
 	"os"
 )

@@ -4,7 +4,7 @@ import (
 	"errors"
 	"flag"
 	"fmt"
-	"github.com/Cryliss/go-cors/scanner"
+	"github.com/Cryliss/gocors/scanner"
 	"os"
 	"path/filepath"
 	"regexp"
@@ -23,7 +23,7 @@ type Flags struct {
 	File string
 	// Number of threads to use for the scan
 	Threads int
-	// Save the results to a JSON file. Always saves as go-cors/results/domain_TIMESTAMP.json
+	// Save the results to a JSON file. Always saves as gocors/results/domain_TIMESTAMP.json
 	Output string
 	// Set requests timeout
 	Timeout string

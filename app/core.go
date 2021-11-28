@@ -1,8 +1,8 @@
 package app
 
 import (
-	"github.com/Cryliss/go-cors/log"
-	"github.com/Cryliss/go-cors/scanner"
+	"github.com/Cryliss/gocors/log"
+	"github.com/Cryliss/gocors/scanner"
 )
 
 // New creates and returns a new Application with a default scanner initialized

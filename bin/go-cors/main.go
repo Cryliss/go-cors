@@ -2,7 +2,7 @@ package main
 
 import (
 	"flag"
-	"github.com/Cryliss/go-cors/app"
+	"github.com/Cryliss/gocors/app"
 	"os"
 )
 
