@@ -25,7 +25,7 @@ type Scanner struct {
 
 // Conf structure to hold configuration settings for the scna
 type Conf struct {
-	Output  bool       `json:"output"`
+	Output  string     `json:"output"`
 	Tests   []*Request `json:"tests"`
 	Threads int        `json:"threads"`
 	Timeout string     `json:"timeout"`
@@ -75,21 +75,35 @@ func (s *Scanner) Start() {
 	// Log the current scanner configuration, now that it's been setup
 	s.l.Log.Debug().Interface("conf", s.conf).Send()
 
-	// Create a new sync.WaitGroup and the # of threads we need to it
+	// Create a new WaitGroup (waits for a collection of goroutines to finish)
 	processGroup := new(sync.WaitGroup)
+
+	// Add the number of threads we need to wait for to it
 	processGroup.Add(s.conf.Threads)
 
-	// For each thread, create a new client and begin performing the tests.
 	for i := 0; i < s.conf.Threads; i++ {
+		// Create a new goroutine
 		go func() {
+			// Defer letting the processGroup know we're done
 			defer processGroup.Done()
+
+			// For each test
 			for _, t := range s.conf.Tests {
+				// Create a new client with the given proxy configuration
 				c := s.createClient(t.Proxy)
+				// Run the tests
 				s.runTests(c, t)
 			}
 		}()
 	}
+	// Wait blocks and waits for each process group to be done
 	processGroup.Wait()
+
+	// Do we have an output directory?
+	if s.conf.Output != "" {
+		// Save the results of the scan
+		s.SaveResults()
+	}
 }
 
 // runTests runs all the tests and saves their results in array.
@@ -173,9 +187,9 @@ func (s *Scanner) runTests(c *http.Client, r *Request) {
 }
 
 // SaveResults saves the scan results to the provided directory file.
-func (s *Scanner) SaveResults(directory string) error {
+func (s *Scanner) SaveResults() error {
 	for key, results := range s.Results {
-		if err := s.CreateOutputFile(directory, key, results); err != nil {
+		if err := s.CreateOutputFile(key, results); err != nil {
 			return err
 		}
 	}
@@ -183,8 +197,8 @@ func (s *Scanner) SaveResults(directory string) error {
 }
 
 // CreateOutputFile creates a new file and writes the test results to it
-func (s *Scanner) CreateOutputFile(directory, domain string, results [][]*Test) error {
-	newFile := s.newFileName(directory, domain)
+func (s *Scanner) CreateOutputFile(domain string, results [][]*Test) error {
+	newFile := s.newFileName(domain)
 	f, err := json.MarshalIndent(results, "", " ")
 	if err != nil {
 		e := fmt.Sprintf("CreateOutputFile(%s): Error writing file (%s): %s\n", domain, newFile, err.Error())
@@ -198,7 +212,7 @@ func (s *Scanner) CreateOutputFile(directory, domain string, results [][]*Test) 
 }
 
 // newFileName creates the name for the output file in the format of domain_TIMESTAMP.json
-func (s *Scanner) newFileName(directory, domain string) string {
+func (s *Scanner) newFileName(domain string) string {
 	// Get the current time and parse it into a date and time string
 	currTime := time.Now()
 	cTimeArr := strings.Split(currTime.String(), " ")
@@ -207,6 +221,7 @@ func (s *Scanner) newFileName(directory, domain string) string {
 	cTime = strings.Replace(cTime, ":", "-", 2)
 
 	// Let's check the directory that we were given and ensure it has a "/" at the end
+	directory := s.conf.Output
 	if directory[len(directory)-1] != '/' {
 		directory = directory + "/"
 	}
