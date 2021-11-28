@@ -1,0 +1,4102 @@
+[
+ [
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io/",
+   "test": "reflect origin",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "http://crylis.io/",
+   "test": "http origin",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "null",
+   "test": "null origin",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "*",
+   "test": "wildcard origin",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "http://jsbin.com",
+   "test": "third party origin",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://codepen.io",
+   "test": "third party origin",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://jsfiddle.net",
+   "test": "third party origin",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://www.webdevout.net",
+   "test": "third party origin",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://repl.it",
+   "test": "third party origin",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io%60.www.instagram.com",
+   "test": "backtick bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://instagram.com.cryls.io",
+   "test": "post domain bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "https://crylis.io_.www.instagram.com",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io_.www.instagram.com",
+   "test": "underscore bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://wwwSinstagram.com",
+   "test": "unescaped dot bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "https://crylis.io.-www.instagram.com",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.-www.instagram.com",
+   "test": "special character '-' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.\"www.instagram.com",
+   "test": "special character '\"' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.{www.instagram.com",
+   "test": "special character '{' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.}www.instagram.com",
+   "test": "special character '}' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.+www.instagram.com",
+   "test": "special character '+' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.^www.instagram.com",
+   "test": "special character '^' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.%60www.instagram.com",
+   "test": "special character '%60' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.!www.instagram.com",
+   "test": "special character '!' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.~www.instagram.com",
+   "test": "special character '~' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.;www.instagram.com",
+   "test": "special character ';' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.|www.instagram.com",
+   "test": "special character '|' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.\u0026www.instagram.com",
+   "test": "special character '\u0026' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.'www.instagram.com",
+   "test": "special character ''' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.(www.instagram.com",
+   "test": "special character '(' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.)www.instagram.com",
+   "test": "special character ')' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.*www.instagram.com",
+   "test": "special character '*' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.,www.instagram.com",
+   "test": "special character ',' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.$www.instagram.com",
+   "test": "special character '$' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.=www.instagram.com",
+   "test": "special character '=' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.+www.instagram.com",
+   "test": "special character '+' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.%0bwww.instagram.com",
+   "test": "special character '%0b' bypass",
+   "url": "https://www.instagram.com"
+  }
+ ],
+ [
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io/",
+   "test": "reflect origin",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "http://crylis.io/",
+   "test": "http origin",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "null",
+   "test": "null origin",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "*",
+   "test": "wildcard origin",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "http://jsbin.com",
+   "test": "third party origin",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://codepen.io",
+   "test": "third party origin",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://jsfiddle.net",
+   "test": "third party origin",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://www.webdevout.net",
+   "test": "third party origin",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://repl.it",
+   "test": "third party origin",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io%60.www.instagram.com",
+   "test": "backtick bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://instagram.com.cryls.io",
+   "test": "post domain bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "https://crylis.io_.www.instagram.com",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io_.www.instagram.com",
+   "test": "underscore bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://wwwSinstagram.com",
+   "test": "unescaped dot bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "https://crylis.io.-www.instagram.com",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.-www.instagram.com",
+   "test": "special character '-' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.\"www.instagram.com",
+   "test": "special character '\"' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.{www.instagram.com",
+   "test": "special character '{' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.}www.instagram.com",
+   "test": "special character '}' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.+www.instagram.com",
+   "test": "special character '+' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.^www.instagram.com",
+   "test": "special character '^' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.%60www.instagram.com",
+   "test": "special character '%60' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.!www.instagram.com",
+   "test": "special character '!' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.~www.instagram.com",
+   "test": "special character '~' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.;www.instagram.com",
+   "test": "special character ';' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.|www.instagram.com",
+   "test": "special character '|' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.\u0026www.instagram.com",
+   "test": "special character '\u0026' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.'www.instagram.com",
+   "test": "special character ''' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.(www.instagram.com",
+   "test": "special character '(' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.)www.instagram.com",
+   "test": "special character ')' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.*www.instagram.com",
+   "test": "special character '*' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.,www.instagram.com",
+   "test": "special character ',' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.$www.instagram.com",
+   "test": "special character '$' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.=www.instagram.com",
+   "test": "special character '=' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.+www.instagram.com",
+   "test": "special character '+' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.%0bwww.instagram.com",
+   "test": "special character '%0b' bypass",
+   "url": "https://www.instagram.com"
+  }
+ ],
+ [
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io/",
+   "test": "reflect origin",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "http://crylis.io/",
+   "test": "http origin",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "null",
+   "test": "null origin",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "*",
+   "test": "wildcard origin",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "http://jsbin.com",
+   "test": "third party origin",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://codepen.io",
+   "test": "third party origin",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://jsfiddle.net",
+   "test": "third party origin",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://www.webdevout.net",
+   "test": "third party origin",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://repl.it",
+   "test": "third party origin",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io%60.www.instagram.com",
+   "test": "backtick bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://instagram.com.cryls.io",
+   "test": "post domain bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "https://crylis.io_.www.instagram.com",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io_.www.instagram.com",
+   "test": "underscore bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://wwwSinstagram.com",
+   "test": "unescaped dot bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "https://crylis.io.-www.instagram.com",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.-www.instagram.com",
+   "test": "special character '-' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.\"www.instagram.com",
+   "test": "special character '\"' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.{www.instagram.com",
+   "test": "special character '{' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.}www.instagram.com",
+   "test": "special character '}' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.+www.instagram.com",
+   "test": "special character '+' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.^www.instagram.com",
+   "test": "special character '^' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.%60www.instagram.com",
+   "test": "special character '%60' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.!www.instagram.com",
+   "test": "special character '!' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.~www.instagram.com",
+   "test": "special character '~' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.;www.instagram.com",
+   "test": "special character ';' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.|www.instagram.com",
+   "test": "special character '|' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.\u0026www.instagram.com",
+   "test": "special character '\u0026' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.'www.instagram.com",
+   "test": "special character ''' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.(www.instagram.com",
+   "test": "special character '(' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.)www.instagram.com",
+   "test": "special character ')' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.*www.instagram.com",
+   "test": "special character '*' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.,www.instagram.com",
+   "test": "special character ',' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.$www.instagram.com",
+   "test": "special character '$' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.=www.instagram.com",
+   "test": "special character '=' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.+www.instagram.com",
+   "test": "special character '+' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.%0bwww.instagram.com",
+   "test": "special character '%0b' bypass",
+   "url": "https://www.instagram.com"
+  }
+ ],
+ [
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io/",
+   "test": "reflect origin",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "http://crylis.io/",
+   "test": "http origin",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "null",
+   "test": "null origin",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "*",
+   "test": "wildcard origin",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "http://jsbin.com",
+   "test": "third party origin",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://codepen.io",
+   "test": "third party origin",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://jsfiddle.net",
+   "test": "third party origin",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://www.webdevout.net",
+   "test": "third party origin",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://repl.it",
+   "test": "third party origin",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io%60.www.instagram.com",
+   "test": "backtick bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://instagram.com.cryls.io",
+   "test": "post domain bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "https://crylis.io_.www.instagram.com",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io_.www.instagram.com",
+   "test": "underscore bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://wwwSinstagram.com",
+   "test": "unescaped dot bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "https://crylis.io.-www.instagram.com",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.-www.instagram.com",
+   "test": "special character '-' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.\"www.instagram.com",
+   "test": "special character '\"' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.{www.instagram.com",
+   "test": "special character '{' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.}www.instagram.com",
+   "test": "special character '}' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.+www.instagram.com",
+   "test": "special character '+' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.^www.instagram.com",
+   "test": "special character '^' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.%60www.instagram.com",
+   "test": "special character '%60' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.!www.instagram.com",
+   "test": "special character '!' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.~www.instagram.com",
+   "test": "special character '~' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.;www.instagram.com",
+   "test": "special character ';' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.|www.instagram.com",
+   "test": "special character '|' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.\u0026www.instagram.com",
+   "test": "special character '\u0026' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.'www.instagram.com",
+   "test": "special character ''' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.(www.instagram.com",
+   "test": "special character '(' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.)www.instagram.com",
+   "test": "special character ')' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.*www.instagram.com",
+   "test": "special character '*' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.,www.instagram.com",
+   "test": "special character ',' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.$www.instagram.com",
+   "test": "special character '$' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.=www.instagram.com",
+   "test": "special character '=' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.+www.instagram.com",
+   "test": "special character '+' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.%0bwww.instagram.com",
+   "test": "special character '%0b' bypass",
+   "url": "https://www.instagram.com"
+  }
+ ],
+ [
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io/",
+   "test": "reflect origin",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "http://crylis.io/",
+   "test": "http origin",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "null",
+   "test": "null origin",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "*",
+   "test": "wildcard origin",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "http://jsbin.com",
+   "test": "third party origin",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://codepen.io",
+   "test": "third party origin",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://jsfiddle.net",
+   "test": "third party origin",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://www.webdevout.net",
+   "test": "third party origin",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://repl.it",
+   "test": "third party origin",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io%60.www.instagram.com",
+   "test": "backtick bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://instagram.com.cryls.io",
+   "test": "post domain bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "https://crylis.io_.www.instagram.com",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io_.www.instagram.com",
+   "test": "underscore bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://wwwSinstagram.com",
+   "test": "unescaped dot bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "https://crylis.io.-www.instagram.com",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.-www.instagram.com",
+   "test": "special character '-' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.\"www.instagram.com",
+   "test": "special character '\"' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.{www.instagram.com",
+   "test": "special character '{' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.}www.instagram.com",
+   "test": "special character '}' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.+www.instagram.com",
+   "test": "special character '+' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.^www.instagram.com",
+   "test": "special character '^' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.%60www.instagram.com",
+   "test": "special character '%60' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.!www.instagram.com",
+   "test": "special character '!' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.~www.instagram.com",
+   "test": "special character '~' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.;www.instagram.com",
+   "test": "special character ';' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.|www.instagram.com",
+   "test": "special character '|' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.\u0026www.instagram.com",
+   "test": "special character '\u0026' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.'www.instagram.com",
+   "test": "special character ''' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.(www.instagram.com",
+   "test": "special character '(' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.)www.instagram.com",
+   "test": "special character ')' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.*www.instagram.com",
+   "test": "special character '*' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.,www.instagram.com",
+   "test": "special character ',' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.$www.instagram.com",
+   "test": "special character '$' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.=www.instagram.com",
+   "test": "special character '=' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.+www.instagram.com",
+   "test": "special character '+' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.%0bwww.instagram.com",
+   "test": "special character '%0b' bypass",
+   "url": "https://www.instagram.com"
+  }
+ ],
+ [
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io/",
+   "test": "reflect origin",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "http://crylis.io/",
+   "test": "http origin",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "null",
+   "test": "null origin",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "*",
+   "test": "wildcard origin",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "http://jsbin.com",
+   "test": "third party origin",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://codepen.io",
+   "test": "third party origin",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://jsfiddle.net",
+   "test": "third party origin",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://www.webdevout.net",
+   "test": "third party origin",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://repl.it",
+   "test": "third party origin",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io%60.www.instagram.com",
+   "test": "backtick bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://instagram.com.cryls.io",
+   "test": "post domain bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "https://crylis.io_.www.instagram.com",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io_.www.instagram.com",
+   "test": "underscore bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://wwwSinstagram.com",
+   "test": "unescaped dot bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "https://crylis.io.-www.instagram.com",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.-www.instagram.com",
+   "test": "special character '-' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.\"www.instagram.com",
+   "test": "special character '\"' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.{www.instagram.com",
+   "test": "special character '{' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.}www.instagram.com",
+   "test": "special character '}' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.+www.instagram.com",
+   "test": "special character '+' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.^www.instagram.com",
+   "test": "special character '^' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.%60www.instagram.com",
+   "test": "special character '%60' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.!www.instagram.com",
+   "test": "special character '!' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.~www.instagram.com",
+   "test": "special character '~' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.;www.instagram.com",
+   "test": "special character ';' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.|www.instagram.com",
+   "test": "special character '|' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.\u0026www.instagram.com",
+   "test": "special character '\u0026' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.'www.instagram.com",
+   "test": "special character ''' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.(www.instagram.com",
+   "test": "special character '(' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.)www.instagram.com",
+   "test": "special character ')' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.*www.instagram.com",
+   "test": "special character '*' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.,www.instagram.com",
+   "test": "special character ',' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.$www.instagram.com",
+   "test": "special character '$' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.=www.instagram.com",
+   "test": "special character '=' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.+www.instagram.com",
+   "test": "special character '+' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.%0bwww.instagram.com",
+   "test": "special character '%0b' bypass",
+   "url": "https://www.instagram.com"
+  }
+ ],
+ [
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io/",
+   "test": "reflect origin",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "http://crylis.io/",
+   "test": "http origin",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "null",
+   "test": "null origin",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "*",
+   "test": "wildcard origin",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "http://jsbin.com",
+   "test": "third party origin",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://codepen.io",
+   "test": "third party origin",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://jsfiddle.net",
+   "test": "third party origin",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://www.webdevout.net",
+   "test": "third party origin",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://repl.it",
+   "test": "third party origin",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io%60.www.instagram.com",
+   "test": "backtick bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://instagram.com.cryls.io",
+   "test": "post domain bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "https://crylis.io_.www.instagram.com",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io_.www.instagram.com",
+   "test": "underscore bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://wwwSinstagram.com",
+   "test": "unescaped dot bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "https://crylis.io.-www.instagram.com",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.-www.instagram.com",
+   "test": "special character '-' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.\"www.instagram.com",
+   "test": "special character '\"' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.{www.instagram.com",
+   "test": "special character '{' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.}www.instagram.com",
+   "test": "special character '}' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.+www.instagram.com",
+   "test": "special character '+' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.^www.instagram.com",
+   "test": "special character '^' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.%60www.instagram.com",
+   "test": "special character '%60' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.!www.instagram.com",
+   "test": "special character '!' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.~www.instagram.com",
+   "test": "special character '~' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.;www.instagram.com",
+   "test": "special character ';' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.|www.instagram.com",
+   "test": "special character '|' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.\u0026www.instagram.com",
+   "test": "special character '\u0026' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.'www.instagram.com",
+   "test": "special character ''' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.(www.instagram.com",
+   "test": "special character '(' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.)www.instagram.com",
+   "test": "special character ')' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.*www.instagram.com",
+   "test": "special character '*' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.,www.instagram.com",
+   "test": "special character ',' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.$www.instagram.com",
+   "test": "special character '$' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.=www.instagram.com",
+   "test": "special character '=' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.+www.instagram.com",
+   "test": "special character '+' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.%0bwww.instagram.com",
+   "test": "special character '%0b' bypass",
+   "url": "https://www.instagram.com"
+  }
+ ],
+ [
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io/",
+   "test": "reflect origin",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "http://crylis.io/",
+   "test": "http origin",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "null",
+   "test": "null origin",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "*",
+   "test": "wildcard origin",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "http://jsbin.com",
+   "test": "third party origin",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://codepen.io",
+   "test": "third party origin",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://jsfiddle.net",
+   "test": "third party origin",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://www.webdevout.net",
+   "test": "third party origin",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://repl.it",
+   "test": "third party origin",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io%60.www.instagram.com",
+   "test": "backtick bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://instagram.com.cryls.io",
+   "test": "post domain bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "https://crylis.io_.www.instagram.com",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io_.www.instagram.com",
+   "test": "underscore bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://wwwSinstagram.com",
+   "test": "unescaped dot bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "https://crylis.io.-www.instagram.com",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.-www.instagram.com",
+   "test": "special character '-' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.\"www.instagram.com",
+   "test": "special character '\"' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.{www.instagram.com",
+   "test": "special character '{' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.}www.instagram.com",
+   "test": "special character '}' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.+www.instagram.com",
+   "test": "special character '+' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.^www.instagram.com",
+   "test": "special character '^' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.%60www.instagram.com",
+   "test": "special character '%60' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.!www.instagram.com",
+   "test": "special character '!' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.~www.instagram.com",
+   "test": "special character '~' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.;www.instagram.com",
+   "test": "special character ';' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.|www.instagram.com",
+   "test": "special character '|' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.\u0026www.instagram.com",
+   "test": "special character '\u0026' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.'www.instagram.com",
+   "test": "special character ''' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.(www.instagram.com",
+   "test": "special character '(' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.)www.instagram.com",
+   "test": "special character ')' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.*www.instagram.com",
+   "test": "special character '*' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.,www.instagram.com",
+   "test": "special character ',' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.$www.instagram.com",
+   "test": "special character '$' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.=www.instagram.com",
+   "test": "special character '=' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.+www.instagram.com",
+   "test": "special character '+' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.%0bwww.instagram.com",
+   "test": "special character '%0b' bypass",
+   "url": "https://www.instagram.com"
+  }
+ ],
+ [
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io/",
+   "test": "reflect origin",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "http://crylis.io/",
+   "test": "http origin",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "null",
+   "test": "null origin",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "*",
+   "test": "wildcard origin",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "http://jsbin.com",
+   "test": "third party origin",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://codepen.io",
+   "test": "third party origin",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://jsfiddle.net",
+   "test": "third party origin",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://www.webdevout.net",
+   "test": "third party origin",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://repl.it",
+   "test": "third party origin",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io%60.www.instagram.com",
+   "test": "backtick bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://instagram.com.cryls.io",
+   "test": "post domain bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "https://crylis.io_.www.instagram.com",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io_.www.instagram.com",
+   "test": "underscore bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://wwwSinstagram.com",
+   "test": "unescaped dot bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "https://crylis.io.-www.instagram.com",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.-www.instagram.com",
+   "test": "special character '-' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.\"www.instagram.com",
+   "test": "special character '\"' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.{www.instagram.com",
+   "test": "special character '{' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.}www.instagram.com",
+   "test": "special character '}' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.+www.instagram.com",
+   "test": "special character '+' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.^www.instagram.com",
+   "test": "special character '^' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.%60www.instagram.com",
+   "test": "special character '%60' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.!www.instagram.com",
+   "test": "special character '!' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.~www.instagram.com",
+   "test": "special character '~' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.;www.instagram.com",
+   "test": "special character ';' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.|www.instagram.com",
+   "test": "special character '|' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.\u0026www.instagram.com",
+   "test": "special character '\u0026' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.'www.instagram.com",
+   "test": "special character ''' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.(www.instagram.com",
+   "test": "special character '(' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.)www.instagram.com",
+   "test": "special character ')' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.*www.instagram.com",
+   "test": "special character '*' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.,www.instagram.com",
+   "test": "special character ',' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.$www.instagram.com",
+   "test": "special character '$' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.=www.instagram.com",
+   "test": "special character '=' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.+www.instagram.com",
+   "test": "special character '+' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.%0bwww.instagram.com",
+   "test": "special character '%0b' bypass",
+   "url": "https://www.instagram.com"
+  }
+ ],
+ [
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io/",
+   "test": "reflect origin",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "http://crylis.io/",
+   "test": "http origin",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "null",
+   "test": "null origin",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "*",
+   "test": "wildcard origin",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "http://jsbin.com",
+   "test": "third party origin",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://codepen.io",
+   "test": "third party origin",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://jsfiddle.net",
+   "test": "third party origin",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://www.webdevout.net",
+   "test": "third party origin",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://repl.it",
+   "test": "third party origin",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io%60.www.instagram.com",
+   "test": "backtick bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://instagram.com.cryls.io",
+   "test": "post domain bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "https://crylis.io_.www.instagram.com",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io_.www.instagram.com",
+   "test": "underscore bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://wwwSinstagram.com",
+   "test": "unescaped dot bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "https://crylis.io.-www.instagram.com",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.-www.instagram.com",
+   "test": "special character '-' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.\"www.instagram.com",
+   "test": "special character '\"' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.{www.instagram.com",
+   "test": "special character '{' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.}www.instagram.com",
+   "test": "special character '}' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.+www.instagram.com",
+   "test": "special character '+' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.^www.instagram.com",
+   "test": "special character '^' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.%60www.instagram.com",
+   "test": "special character '%60' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.!www.instagram.com",
+   "test": "special character '!' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.~www.instagram.com",
+   "test": "special character '~' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.;www.instagram.com",
+   "test": "special character ';' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.|www.instagram.com",
+   "test": "special character '|' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.\u0026www.instagram.com",
+   "test": "special character '\u0026' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.'www.instagram.com",
+   "test": "special character ''' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.(www.instagram.com",
+   "test": "special character '(' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.)www.instagram.com",
+   "test": "special character ')' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.*www.instagram.com",
+   "test": "special character '*' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.,www.instagram.com",
+   "test": "special character ',' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.$www.instagram.com",
+   "test": "special character '$' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.=www.instagram.com",
+   "test": "special character '=' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.+www.instagram.com",
+   "test": "special character '+' bypass",
+   "url": "https://www.instagram.com"
+  },
+  {
+   "access-control-allow-origins": "",
+   "access-control-allow-credentials": "",
+   "headers": {
+    "cookie": "SESSION=Hacked",
+    "user-agent": "GoogleBot"
+   },
+   "method": "",
+   "origin": "https://crylis.io.%0bwww.instagram.com",
+   "test": "special character '%0b' bypass",
+   "url": "https://www.instagram.com"
+  }
+ ]
+]
