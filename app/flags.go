@@ -89,6 +89,7 @@ func (flags *Flags) checkURL(a *Application) {
 	a.domains = append(a.domains, flags.URL)
 }
 
+// allowedMethods are all the accepted request headers 
 var allowedHeaders = scanner.Headers{
 	"access-control-allow-origin":      "",
 	"access-control-allow-credentials": "",
@@ -146,6 +147,7 @@ func (flags *Flags) checkHeader(a *Application) scanner.Headers {
 	return h
 }
 
+// allowedMethods are all the accepted request methods
 var allowedMethods = map[string]string{
 	"DELETE": "",
 	"GET":    "",
