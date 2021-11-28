@@ -4,7 +4,7 @@ import (
 	"errors"
 	"flag"
 	"fmt"
-	"go-cors/scanner"
+	"github.com/Cryliss/go-cors/scanner"
 	"os"
 	"path/filepath"
 	"regexp"
