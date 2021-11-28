@@ -12,7 +12,7 @@ var (
 	method  string
 	file    string
 	threads int
-	output  bool
+	output  string
 	timeout string
 	proxy   string
 	verbose bool
@@ -25,7 +25,7 @@ func args() {
 	flag.StringVar(&method, "method", "GET", "Include another method other than GET")
 	flag.StringVar(&file, "input", "", "A text file with a list of domains to scan for CORS misconfiguration")
 	flag.IntVar(&threads, "threads", 10, "Number of threads to use for the scan.")
-	flag.BoolVar(&output, "output", true, "Save the results to a JSON file. Always saves as go-cors/results/domain_TIMESTAMP.json")
+	flag.StringVar(&output, "output", "", "Directory to save the results to a JSON file. Always saves the file as domain_TIMESTAMP.json")
 	flag.StringVar(&timeout, "timeout", "10s", "Set the request timeout")
 	flag.StringVar(&proxy, "proxy", "", "Use a HTTP address as a proxy")
 	flag.BoolVar(&verbose, "verbose", false, "Enable the UI for realtime results and requests")
@@ -58,7 +58,4 @@ func main() {
 
 	// We got valid flags / configuration files, let's start the scanning process
 	a.Scan.Start()
-
-	dir := "/Users/sabra/go/src/go-cors/results/"
-	a.Scan.SaveResults(dir)
 }
