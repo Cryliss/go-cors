@@ -83,7 +83,10 @@ Run `go get github.com/Cryliss/gocors` in your terminal.
 ```go
 package main
 
-import "github.com/Cryliss/gocors"
+import (
+    "github.com/Cryliss/gocors"
+    "github.com/Cryliss/gocors/scanner"
+)
 
 func main() {
     // Set our scanner configuration variables
