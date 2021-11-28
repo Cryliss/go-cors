@@ -24,7 +24,7 @@ type Flags struct {
 	// Number of threads to use for the scan
 	Threads int
 	// Save the results to a JSON file. Always saves as go-cors/results/domain_TIMESTAMP.json
-	Output bool
+	Output string
 	// Set requests timeout
 	Timeout string
 	// Use a HTTP address as a proxy
@@ -88,6 +88,24 @@ func (flags *Flags) checkURL(a *Application) {
 	a.domains = append(a.domains, flags.URL)
 }
 
+var allowedHeaders = scanner.Headers{
+	"access-control-allow-origin": "",
+	"access-control-allow-credentials": "",
+	"access-control-allow-headers": "",
+	"access-control-allow-methods": "",
+	"access-control-expose-headers": "",
+	"access-control-max-Age": "",
+	"access-control-request-headers": "",
+	"access-control-request-method": "",
+	"origin": "",
+	"from": "",
+	"host": "",
+	"referer": "",
+	"referer-policy": "",
+	"user-agent": "",
+	"cookie": "",
+}
+
 // checkHeader checks the header flag
 func (flags *Flags) checkHeader(a *Application) scanner.Headers {
 	h := make(scanner.Headers)
@@ -116,27 +134,30 @@ func (flags *Flags) checkHeader(a *Application) scanner.Headers {
 				a.log.Out("a.flags.CheckHeader: continuing to check for additional headers")
 				continue
 			}
-			h[matches[1]] = matches[2]
+
+			// If the provided header value is one of the allowed headers
+			if _, ok := allowedHeaders[strings.ToLower(matches[1])]; ok {
+				// Add it to our headers map
+				h[matches[1]] = matches[2]
+			}
 		}
 	}
 	return h
 }
 
+var allowedMethods = map[string]string{
+	"DELETE": "",
+	"GET": "",
+	"PUT": "",
+	"POST": "",
+	"HEAD": "",
+}
+
 // validateMethod ensure we were given a valid request method from the flags
 func (flags *Flags) validateMethod(a *Application) bool {
-	switch flags.Method {
-	case "DELETE":
-		fallthrough
-	case "GET":
-		fallthrough
-	case "PUT":
-		fallthrough
-	case "POST":
-		fallthrough
-	case "HEAD":
+	if _, ok := allowedMethods[flags.Method]; ok {
 		return true
-	default:
-		a.log.OutErr("a.flags.validateMethod: ignoring given method %s, only DELETE, GET, PUT, POST, and HEAD methods are allowed", flags.Method)
-		return false
 	}
+	a.log.OutErr("a.flags.validateMethod: ignoring given method %s, only DELETE, GET, PUT, POST, and HEAD methods are allowed", flags.Method)
+	return false
 }
