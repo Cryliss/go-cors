@@ -1,4 +1,7 @@
 # gocors
+[![Go Reference](https://pkg.go.dev/badge/github.com/Cryliss/gocors.svg)](https://pkg.go.dev/github.com/Cryliss/gocors)  [![GoReportCard example](https://goreportcard.com/badge/github.com/Cryliss/gocors)](https://goreportcard.com/report/github.com/Cryliss/gocors)
+
+
 A tool for scanning domains for CORS misconfigurations written in Go.  
 Final project for COMP 424 Software Security  
 Professor: Dr. Wonju Lee
@@ -80,7 +83,7 @@ package main
 
 import (
     "fmt"
-    gocors "github.com/Cryliss/gocors
+    "github.com/Cryliss/gocors
     "github.com/Cryliss/gocors/scanner"
     "github.com/Cryliss/gocors/log"
 )
