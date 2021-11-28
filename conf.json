@@ -1,5 +1,5 @@
 {
-    "output": true,
+    "output": "/Users/sabra/go/src/go-cors/results/",
     "verbose": true,
     "timeout": "10s",
     "threads": 10,
