@@ -54,7 +54,7 @@ func (s *Scanner) createClient(proxy string) *http.Client {
 		return http.ErrUseLastResponse
 	}
 
-	// Create and return a new HTTP client 
+	// Create and return a new HTTP client
 	c := http.Client{
 		Transport:     transport,
 		CheckRedirect: redirect,
@@ -68,6 +68,10 @@ func (s *Scanner) sendRequest(c *http.Client, url, origin, method string, header
 	// Make sure method has a value
 	if method == "" {
 		method = "GET"
+	}
+
+	if url[0] != 'h' {
+		url = "https://"+url
 	}
 
 	// Create a new request
