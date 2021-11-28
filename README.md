@@ -1,4 +1,6 @@
 # gocors
+[![Go Reference](https://pkg.go.dev/badge/github.com/Cryliss/gocors.svg)](https://pkg.go.dev/github.com/Cryliss/gocors)
+
 A tool for scanning domains for CORS misconfigurations written in Go.  
 Final project for COMP 424 Software Security  
 Professor: Dr. Wonju Lee
