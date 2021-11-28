@@ -71,7 +71,7 @@ func (s *Scanner) sendRequest(c *http.Client, url, origin, method string, header
 	}
 
 	if url[0] != 'h' {
-		url = "https://"+url
+		url = "https://" + url
 	}
 
 	// Create a new request

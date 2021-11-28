@@ -41,7 +41,7 @@ func (a *Application) parseConfigFile(f *os.File) error {
 	// Set the logger's verbose settings based on the config file
 	a.log.Verbose = conf.Verbose
 
-	// Create a new scanner, passing it the parsed configuration and our logger 
+	// Create a new scanner, passing it the parsed configuration and our logger
 	a.Scan = scanner.New(&conf, a.log)
 	return nil
 }

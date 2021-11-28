@@ -89,21 +89,21 @@ func (flags *Flags) checkURL(a *Application) {
 }
 
 var allowedHeaders = scanner.Headers{
-	"access-control-allow-origin": "",
+	"access-control-allow-origin":      "",
 	"access-control-allow-credentials": "",
-	"access-control-allow-headers": "",
-	"access-control-allow-methods": "",
-	"access-control-expose-headers": "",
-	"access-control-max-Age": "",
-	"access-control-request-headers": "",
-	"access-control-request-method": "",
-	"origin": "",
-	"from": "",
-	"host": "",
-	"referer": "",
-	"referer-policy": "",
-	"user-agent": "",
-	"cookie": "",
+	"access-control-allow-headers":     "",
+	"access-control-allow-methods":     "",
+	"access-control-expose-headers":    "",
+	"access-control-max-Age":           "",
+	"access-control-request-headers":   "",
+	"access-control-request-method":    "",
+	"origin":                           "",
+	"from":                             "",
+	"host":                             "",
+	"referer":                          "",
+	"referer-policy":                   "",
+	"user-agent":                       "",
+	"cookie":                           "",
 }
 
 // checkHeader checks the header flag
@@ -147,10 +147,10 @@ func (flags *Flags) checkHeader(a *Application) scanner.Headers {
 
 var allowedMethods = map[string]string{
 	"DELETE": "",
-	"GET": "",
-	"PUT": "",
-	"POST": "",
-	"HEAD": "",
+	"GET":    "",
+	"PUT":    "",
+	"POST":   "",
+	"HEAD":   "",
 }
 
 // validateMethod ensure we were given a valid request method from the flags
