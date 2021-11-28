@@ -201,7 +201,7 @@ func (s *Scanner) backtickBypass(c *http.Client, r *Request, tests []*Test) ([]*
 	}
 
 	// Set the origin value for the request we're going to make
-	origin := url.Scheme + "://crylis.io%60."+ url.Subdomain + "." + url.Domain + "." + url.TLD
+	origin := "https://crylis.io%60."+ url.Subdomain + "." + url.Domain + "." + url.TLD
 
 	// Perform the request
 	acao, acac, err := s.sendRequest(c, r.URL, origin, r.Method, r.Headers)
@@ -240,7 +240,7 @@ func (s *Scanner) postDomainBypass(c *http.Client, r *Request, tests []*Test) ([
 	}
 
 	// Set the origin value for the request we're going to make
-	origin := url.Scheme + "://" + url.Domain + "." + url.TLD + ".cryls.io"
+	origin := "https://" + url.Domain + "." + url.TLD + ".cryls.io"
 
 	// Perform the request
 	acao, acac, err := s.sendRequest(c, r.URL, origin, r.Method, r.Headers)
@@ -319,7 +319,7 @@ func (s *Scanner) underscoreBypass(c *http.Client, r *Request, tests []*Test) ([
 	}
 
 	// Set the origin value for the request we're going to make
-	origin := url.Scheme + "://crylis.io_." + url.Subdomain + "." + url.Domain + "." + url.TLD
+	origin := "https://crylis.io_." + url.Subdomain + "." + url.Domain + "." + url.TLD
 
 	// Perform the request
 	acao, acac, err := s.sendRequest(c, r.URL, origin, r.Method, r.Headers)
@@ -358,7 +358,7 @@ func (s *Scanner) unescapedDotBypass(c *http.Client, r *Request, tests []*Test) 
 	}
 
 	// Set the origin value for the request we're going to make
-	origin := url.Scheme + "://" + url.Subdomain + "S" + url.Domain + "." + url.TLD
+	origin := "https://" + url.Subdomain + "S" + url.Domain + "." + url.TLD
 
 	// Perform the request
 	acao, acac, err := s.sendRequest(c, r.URL, origin, r.Method, r.Headers)
@@ -400,7 +400,7 @@ func (s *Scanner) specialCharactersBypass(c *http.Client, r *Request, tests []*T
 	specialChars := []string{"-", `"`, "{", "}", "+", "^", "%60", "!", "~", ";", "|", "&", "'", "(", ")", "*", ",", "$", "=", "+", "%0b"}
 	for _, char := range specialChars {
 		// Set the origin value for the request we're going to make
-		origin := url.Scheme + "://crylis.io." + char + url.Subdomain + "." + url.Domain + "."+ url.TLD
+		origin := "https://crylis.io." + char + url.Subdomain + "." + url.Domain + "."+ url.TLD
 
 		// Perform the request
 		acao, acac, err := s.sendRequest(c, r.URL, origin, r.Method, r.Headers)
