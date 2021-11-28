@@ -117,11 +117,7 @@ func main() {
     corsScanner.CreateTests(domains, headers, "GET", "")
 
     // Now that we have our tests set, we can go ahead and start the scanner.
+    // If output was set, it will automatically save the results
     corsScanner.Start()
-
-    // After running the scan, you can save your results to a specific file directory like so:
-    if err := corsScanner.SaveResults("/your/directories/filepath/"); err != nil {
-        fmt.Printf("Error saving reults: %s\n", err.Error())
-    }
 }
 ```
