@@ -1,4 +1,4 @@
-module go-cors
+module github.com/Cryliss/go-cors
 
 go 1.16
 
