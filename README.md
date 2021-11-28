@@ -80,12 +80,13 @@ package main
 
 import (
     "fmt"
+    gocors "github.com/Cryliss/go-cors
     "github.com/Cryliss/go-cors/scanner"
     "github.com/Cryliss/go-cors/log"
 )
 
 func main() {
-    corsScanner := InitGoCors()
+    corsScanner := gocors.InitGoCors()
 
     /*
     In order to start running tests with go-cors, we need to create them first.
