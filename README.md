@@ -80,7 +80,7 @@ package main
 
 import (
     "fmt"
-    gocors "github.com/Cryliss/gocors
+    "github.com/Cryliss/gocors
     "github.com/Cryliss/gocors/scanner"
     "github.com/Cryliss/gocors/log"
 )
