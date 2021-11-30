@@ -1,3 +1,3 @@
 build:
 	go mod download
-	go build -o gocors bin/gocors/main.go
+	go build -o gocors bin/go-cors/main.go
