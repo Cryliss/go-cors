@@ -1,5 +1,5 @@
 # gocors
-[![Go Reference](https://pkg.go.dev/badge/github.com/Cryliss/gocors.svg)](https://pkg.go.dev/github.com/Cryliss/gocors)  [![Go Report Card](https://goreportcard.com/badge/github.com/Cryliss/gocors)](https://goreportcard.com/report/github.com/Cryliss/gocors)
+[![Go Reference](https://pkg.go.dev/badge/github.com/Cryliss/gocors.svg)](https://pkg.go.dev/github.com/Cryliss/gocors)  [![GoReportCard example](https://goreportcard.com/badge/github.com/Cryliss/gocors)](https://goreportcard.com/report/github.com/Cryliss/gocors)
 
 
 A tool for scanning domains for CORS misconfigurations written in Go.  
@@ -70,7 +70,7 @@ To add additional configuration to a request, there are two options.
 - **Method**:  `./gocors -url https://example.com -method POST`
 - **Input**:   `./gocors -input global_top_100_domains.txt`
 - **Threads**: `./gocors -url https://example.com -threads 20`
-- **Output**:  `./gocors -url https://example.com -output true`
+- **Output**:  `./gocors -url https://example.com -output "/path/to/your/results/directory/"`
 - **Timeout**: `./gocors -url https://example.com -timeout 20s`
 - **Proxy**:   `./gocors -url https://example.com -proxy http://127.0.0.1:4545`
 - **Verbose**: `./gocors -url https://example.com -verbose true`
@@ -93,7 +93,7 @@ func main() {
     output := "/path/to/your/output/directory"
     timeout := "10s"
     threads := 10
-    
+
     // Create a new scanner.
     corsScanner := gocors.InitGoCors(output, timeout, threads)
 
@@ -102,7 +102,8 @@ func main() {
 
     Creating tests requires an array of domain names, a scanner.Headers variable
     which is a map[string]string of header name-value pairs, a request method and
-    a proxy URL.
+    a proxy URL. If you want to set custom headers, do:
+    headers["cookie"] = "SESSION=Hacked"
 
     After creating our headers variable and domain names, then we can call the create
     tests function, which will set scanner.Conf.Tests value at the end.
@@ -112,7 +113,7 @@ func main() {
     corsScanner.CreateTests(domains, headers, "GET", "")
 
     // Now that we have our tests set, we can go ahead and start the scanner.
-    // Once the scan finishes, it will automatically save your results to the output 
+    // Once the scan finishes, it will automatically save your results to the output
     // directory, if one is provided.
     corsScanner.Start()
 }
