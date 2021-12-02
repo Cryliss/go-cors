@@ -2,8 +2,10 @@ package main
 
 import (
 	"flag"
+	"fmt"
 	"github.com/Cryliss/gocors/app"
 	"os"
+	"time"
 )
 
 var (
@@ -56,6 +58,16 @@ func main() {
 		os.Exit(-1)
 	}
 
+	start := time.Now()
 	// We got valid flags / configuration files, let's start the scanning process
 	a.Scan.Start()
+	elapsed := time.Since(start)
+
+	var tests int
+	for _, r := range a.Scan.Results {
+		for _, t := range r {
+			tests = tests+len(t)
+		}
+	}
+	fmt.Printf("\nRan %d tests in %v\n", tests,elapsed)
 }
