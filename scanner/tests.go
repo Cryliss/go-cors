@@ -202,7 +202,7 @@ func (s *Scanner) backtickBypass(c *http.Client, r *Request, tests []*Test) ([]*
 	}
 
 	// Set the origin value for the request we're going to make
-	origin := "https://crylis.io%60" + url.Subdomain + "." + url.Domain + "." + url.TLD
+	origin := "https://crylis.io%60" + url.Domain + "." + url.TLD
 
 	// Perform the request
 	acao, acac, err := s.sendRequest(c, r.URL, origin, r.Method, r.Headers)
@@ -320,7 +320,7 @@ func (s *Scanner) underscoreBypass(c *http.Client, r *Request, tests []*Test) ([
 	}
 
 	// Set the origin value for the request we're going to make
-	origin := "https://crylis.io_" + url.Subdomain + "." + url.Domain + "." + url.TLD
+	origin := "https://crylis.io_"+ url.Domain + "." + url.TLD
 
 	// Perform the request
 	acao, acac, err := s.sendRequest(c, r.URL, origin, r.Method, r.Headers)
